@@ -18,7 +18,7 @@
 		CE437B262A44696F00A03A6C /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B252A44696F00A03A6C /* Ball.swift */; };
 		CE437B292A4469D700A03A6C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B282A4469D700A03A6C /* GameView.swift */; };
 		CE437B342A44774800A03A6C /* WurdalakMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE437B332A44774800A03A6C /* WurdalakMusic.mp3 */; };
-		CE437B372A447F0C00A03A6C /* thewitcher.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE437B362A447F0C00A03A6C /* thewitcher.ttf */; };
+		CE437B402A44E98700A03A6C /* GTARussian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE437B3F2A44E98700A03A6C /* GTARussian.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,8 @@
 		CE437B252A44696F00A03A6C /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		CE437B282A4469D700A03A6C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CE437B332A44774800A03A6C /* WurdalakMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WurdalakMusic.mp3; sourceTree = "<group>"; };
-		CE437B362A447F0C00A03A6C /* thewitcher.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = thewitcher.ttf; path = ../../../../../Downloads/thewitcher.ttf; sourceTree = "<group>"; };
+		CE437B3D2A44A05F00A03A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE437B3F2A44E98700A03A6C /* GTARussian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GTARussian.ttf; path = ../../../../GTARussian.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,8 @@
 		CE437B002A433A9400A03A6C /* Wurdalak */ = {
 			isa = PBXGroup;
 			children = (
-				CE437B352A447F0100A03A6C /* Fonts */,
+				CE437B3D2A44A05F00A03A6C /* Info.plist */,
+				CE437B352A447F0100A03A6C /* Font */,
 				CE437B162A435A9800A03A6C /* Extensions */,
 				CE437B232A44691300A03A6C /* Game */,
 				CE437B202A44686200A03A6C /* Music */,
@@ -147,12 +149,12 @@
 			path = MusicList;
 			sourceTree = "<group>";
 		};
-		CE437B352A447F0100A03A6C /* Fonts */ = {
+		CE437B352A447F0100A03A6C /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				CE437B362A447F0C00A03A6C /* thewitcher.ttf */,
+				CE437B3F2A44E98700A03A6C /* GTARussian.ttf */,
 			);
-			path = Fonts;
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE437B092A433A9500A03A6C /* Preview Assets.xcassets in Resources */,
-				CE437B372A447F0C00A03A6C /* thewitcher.ttf in Resources */,
 				CE437B062A433A9500A03A6C /* Assets.xcassets in Resources */,
 				CE437B342A44774800A03A6C /* WurdalakMusic.mp3 in Resources */,
+				CE437B402A44E98700A03A6C /* GTARussian.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,19 +365,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wurdalak/Preview Content\"";
+				DEVELOPMENT_TEAM = LGYHVZBWQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wurdalak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nariman.Wurdalak;
+				PRODUCT_BUNDLE_IDENTIFIER = Nariman.Wurdalak01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -391,19 +396,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wurdalak/Preview Content\"";
+				DEVELOPMENT_TEAM = LGYHVZBWQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wurdalak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nariman.Wurdalak;
+				PRODUCT_BUNDLE_IDENTIFIER = Nariman.Wurdalak01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

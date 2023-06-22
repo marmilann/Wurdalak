@@ -18,12 +18,12 @@ struct ContentView: View {
                 Image("wurdalak_wallpapper")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 500)
+                    .frame(width: 600)
                 VStack {
-                    Text ("WURDALAK")
+                    Text("ВУРДАЛАК")
                         .foregroundColor(.green)
                         .padding(.bottom, 550)
-                        .font(.system(size: 65))
+                        .font(Font(UIFont(name: "GTARussian", size: 65)!))
                     
                     Button(action: {
                         showsDetailViewController.toggle()
@@ -33,7 +33,7 @@ struct ContentView: View {
                             .foregroundColor(.green)
                             .background(Color.brown)
                             .cornerRadius(20)
-                            .font(.system(size: 30))
+                            .font(Font(UIFont(name: "GTARussian", size: 30)!))
                     })
                 }
                 NavigationLink(destination: GameView(), isActive: $showsDetailViewController) { EmptyView() }

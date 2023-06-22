@@ -17,7 +17,7 @@ struct GameView: View {
     private let ballSize: CGSize = CGSize(width: 50, height: 50)
     private let playerSize: CGSize = CGSize(width: 110, height: 110)
     
-    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         GeometryReader { geometry in
