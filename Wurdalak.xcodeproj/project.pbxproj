@@ -13,6 +13,12 @@
 		CE437B092A433A9500A03A6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE437B082A433A9500A03A6C /* Preview Assets.xcassets */; };
 		CE437B0B2A433A9500A03A6C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B0A2A433A9500A03A6C /* Persistence.swift */; };
 		CE437B0E2A433A9500A03A6C /* Wurdalak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE437B0C2A433A9500A03A6C /* Wurdalak.xcdatamodeld */; };
+		CE437B1B2A435DE600A03A6C /* IconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B1A2A435DE600A03A6C /* IconName.swift */; };
+		CE437B222A4468A400A03A6C /* MusicAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B212A4468A400A03A6C /* MusicAudioPlayer.swift */; };
+		CE437B262A44696F00A03A6C /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B252A44696F00A03A6C /* Ball.swift */; };
+		CE437B292A4469D700A03A6C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE437B282A4469D700A03A6C /* GameView.swift */; };
+		CE437B342A44774800A03A6C /* WurdalakMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE437B332A44774800A03A6C /* WurdalakMusic.mp3 */; };
+		CE437B372A447F0C00A03A6C /* thewitcher.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE437B362A447F0C00A03A6C /* thewitcher.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		CE437B082A433A9500A03A6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE437B0A2A433A9500A03A6C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CE437B0D2A433A9500A03A6C /* Wurdalak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wurdalak.xcdatamodel; sourceTree = "<group>"; };
+		CE437B1A2A435DE600A03A6C /* IconName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconName.swift; sourceTree = "<group>"; };
+		CE437B212A4468A400A03A6C /* MusicAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAudioPlayer.swift; sourceTree = "<group>"; };
+		CE437B252A44696F00A03A6C /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		CE437B282A4469D700A03A6C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CE437B332A44774800A03A6C /* WurdalakMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WurdalakMusic.mp3; sourceTree = "<group>"; };
+		CE437B362A447F0C00A03A6C /* thewitcher.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = thewitcher.ttf; path = ../../../../../Downloads/thewitcher.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +67,13 @@
 		CE437B002A433A9400A03A6C /* Wurdalak */ = {
 			isa = PBXGroup;
 			children = (
+				CE437B352A447F0100A03A6C /* Fonts */,
+				CE437B162A435A9800A03A6C /* Extensions */,
+				CE437B232A44691300A03A6C /* Game */,
+				CE437B202A44686200A03A6C /* Music */,
+				CE437B052A433A9500A03A6C /* Assets.xcassets */,
 				CE437B012A433A9400A03A6C /* WurdalakApp.swift */,
 				CE437B032A433A9400A03A6C /* ContentView.swift */,
-				CE437B052A433A9500A03A6C /* Assets.xcassets */,
 				CE437B0A2A433A9500A03A6C /* Persistence.swift */,
 				CE437B0C2A433A9500A03A6C /* Wurdalak.xcdatamodeld */,
 				CE437B072A433A9500A03A6C /* Preview Content */,
@@ -71,6 +87,72 @@
 				CE437B082A433A9500A03A6C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE437B162A435A9800A03A6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B1A2A435DE600A03A6C /* IconName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE437B202A44686200A03A6C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B322A44772F00A03A6C /* MusicList */,
+				CE437B2A2A446A8F00A03A6C /* MusicAudioPlayer */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		CE437B232A44691300A03A6C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B272A4469A100A03A6C /* GameView */,
+				CE437B242A44694600A03A6C /* GameModel */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		CE437B242A44694600A03A6C /* GameModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B252A44696F00A03A6C /* Ball.swift */,
+			);
+			path = GameModel;
+			sourceTree = "<group>";
+		};
+		CE437B272A4469A100A03A6C /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B282A4469D700A03A6C /* GameView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		CE437B2A2A446A8F00A03A6C /* MusicAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B212A4468A400A03A6C /* MusicAudioPlayer.swift */,
+			);
+			path = MusicAudioPlayer;
+			sourceTree = "<group>";
+		};
+		CE437B322A44772F00A03A6C /* MusicList */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B332A44774800A03A6C /* WurdalakMusic.mp3 */,
+			);
+			path = MusicList;
+			sourceTree = "<group>";
+		};
+		CE437B352A447F0100A03A6C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE437B362A447F0C00A03A6C /* thewitcher.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE437B092A433A9500A03A6C /* Preview Assets.xcassets in Resources */,
+				CE437B372A447F0C00A03A6C /* thewitcher.ttf in Resources */,
 				CE437B062A433A9500A03A6C /* Assets.xcassets in Resources */,
+				CE437B342A44774800A03A6C /* WurdalakMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE437B262A44696F00A03A6C /* Ball.swift in Sources */,
 				CE437B0E2A433A9500A03A6C /* Wurdalak.xcdatamodeld in Sources */,
+				CE437B222A4468A400A03A6C /* MusicAudioPlayer.swift in Sources */,
 				CE437B0B2A433A9500A03A6C /* Persistence.swift in Sources */,
+				CE437B292A4469D700A03A6C /* GameView.swift in Sources */,
 				CE437B042A433A9400A03A6C /* ContentView.swift in Sources */,
 				CE437B022A433A9400A03A6C /* WurdalakApp.swift in Sources */,
+				CE437B1B2A435DE600A03A6C /* IconName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
